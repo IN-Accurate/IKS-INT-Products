@@ -9,6 +9,9 @@
   "author": "Adithya Udayan",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20"
