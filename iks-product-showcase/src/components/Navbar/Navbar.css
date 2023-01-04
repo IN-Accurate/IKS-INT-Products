@@ -1,0 +1,138 @@
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.search-container {
+  margin-right: 200px;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  width: 200px;
+}
+
+.search-container button[type="submit"] {
+  border: none;
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar .logo {
+    margin: 20px;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+  .search-container {
+    display: none;
+  }
+
+  .mobile-menu > .search-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+  .menu-container {
+    display: flex;
+  }
+  .search-container {
+    display: none;
+  }
+
+  .mobile-menu > .search-container {
+    display: flex;
+  }
+}
+
+.mobile-menu > .search-container {
+  margin: 20px;
+}
+
+.search-container {
+  margin-right: 20px;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  width: 200px;
+}
+
+.search-icon {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
