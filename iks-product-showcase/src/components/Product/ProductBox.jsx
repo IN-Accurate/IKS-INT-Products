@@ -12,9 +12,9 @@ function ProductBox(props) {
         <div className='card-content'>
             <div className="flex">
             {!expanded&&
-            <p> {text.shortpara} </p>}
+            <p> {text.shorttext} </p>}
             {expanded&&
-            <p> {text.longpara} </p>}
+            <p> {text.longtext} </p>}
             </div>
             
             <div className="button-container flex">
