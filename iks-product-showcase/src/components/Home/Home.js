@@ -4,13 +4,12 @@ import { animateScroll as scroll } from "react-scroll";
 function Home() {
   const scrollToProduct = () => {
     const element = document.getElementById("product-container");
-    
-      scroll.scrollTo(element.offsetTop);
-    
+
+    scroll.scrollTo(element.offsetTop);
   };
 
   return (
-     <div className="home-container" id="home-container">
+    <div className="home-container" id="home-container">
       <div className="leftside">
         <div className="header-text">NEW ARRIVALS</div>
         <div className="home-content">

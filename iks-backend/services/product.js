@@ -16,3 +16,12 @@ exports.getSpecificProduct = (productName) => {
         })
     })
 }
+
+exports.searchDocs = (searchQuery) => {
+    return new Promise((resolve, reject) => {
+        Products.find({$text: { $search: searchQuery}}, (err, products)=>{
+            if(err) return reject(err);
+            resolve(products);
+        })
+    })
+}
