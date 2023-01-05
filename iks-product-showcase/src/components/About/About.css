@@ -1,3 +1,10 @@
 .about-container{
-    margin-top:60px;
+    background-color: rgb(24, 40, 51);
+    padding-top:60px;
+    color: white;
 }
+
+.about-header{
+    font-size: 48px;
+    font-weight: bold;
+  }
