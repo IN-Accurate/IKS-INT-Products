@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index:4;
   padding-inline: 40px;
 }
 
