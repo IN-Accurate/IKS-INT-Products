@@ -1,0 +1,8 @@
+.product-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-box>img{
+    width: 50vh;
+}
