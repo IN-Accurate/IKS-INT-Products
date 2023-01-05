@@ -7,6 +7,9 @@ const router = require('./routes/router');
 dotenv.config();
 
 const app = express();
+
+// Change origin with frontend URL
+// app.use(cors({ credentials: true, origin:'https://frontend.url'}));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true}));
 db.connect();

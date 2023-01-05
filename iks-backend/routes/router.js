@@ -7,6 +7,7 @@ const router = express.Router();
 // should add callback to these routes.
 router.get('/products/all', productController.getAllProducts);
 router.get('/product/:productName', productController.getSpecificProduct);
+router.get('/search/:productName', productController.search);
 router.post('/subscribe', subscriberController.addSubscriber);
 
 
