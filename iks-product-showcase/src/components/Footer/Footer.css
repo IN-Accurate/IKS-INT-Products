@@ -1,0 +1,43 @@
+.footer-container {
+  padding-block: 30px;
+  background-color: rgb(24, 40, 51);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-text {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-container .row {
+  font-size: 14px;
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
+}
+.form-control {
+  width: 340px;
+  padding: 10px;
+  height: 40px;
+}
+.form-control:focus {
+  outline: none;
+}
+.input-addon {
+  cursor: pointer;
+  background-color: black;
+  height: 40px;
+  padding: 8.5px;
+}
+
+@media (max-width: 600px) {
+  .form-control {
+    width: 250px;
+  }
+}
