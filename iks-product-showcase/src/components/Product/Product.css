@@ -1,3 +1,14 @@
 .product-container{
     margin-top:60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 5rem 0rem;
+    background-color: rgb(24,40,51);
 }
+
+.product-container>h1{
+    grid-column: span 2;
+    color: white;
+}
+
