@@ -4,6 +4,7 @@ import HamburgerMenu from "react-hamburger-menu";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
+
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
@@ -25,7 +26,9 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   return (
     <nav className="navbar-container">
-      <div className="logo" onClick={scrollToHome}>
+      <div
+        className="logo"
+      >
         IKS
       </div>
       <div className="navbar-links">

@@ -1,6 +1,5 @@
 import ProductBox from "./ProductBox";
 import "./Product.css";
-import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { api } from "../../api";

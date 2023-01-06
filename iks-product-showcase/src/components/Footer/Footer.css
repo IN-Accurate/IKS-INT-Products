@@ -1,6 +1,6 @@
 .footer-container {
   padding-block: 30px;
-  background-color: rgb(0,40,85);
+  background-color: rgb(0,98,155);
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -40,13 +40,83 @@
   padding: 8.5px;
 }
 
+.input-group {
+  
+  margin-top: 30px;
+}
+
 a{
   text-decoration: none;
   color: white;
 }
 
+.icons-row{
+  display: flex;
+  flex-direction: row;
+  justify-content:baseline;
+  gap:360px;
+}
+
+.icon{
+  width: 34px;
+  height: 40px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  gap:280px;
+  padding-left:40px;
+  padding-right: 40px;
+}
+
+.contact-details-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:260px;
+}
+
+.phone-text{
+  padding-left: 10px;
+  margin-right: 10px;
+}
 @media (max-width: 600px) {
   .form-control {
     width: 250px;
   }
+  .icons-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    gap:160px;
+  }
+  
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left:40px;
+    padding-right: 40px;
+    gap:50px;
+  }
+  .contact-details-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+  }
+
+  
+  .phone-text{
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+  
 }
