@@ -1,10 +1,17 @@
-.about-container{
-    background-color: rgb(24, 40, 51);
-    padding-top:60px;
-    color: white;
+.about-container {
+  background-color: rgb(24, 40, 51);
+  padding-block: 10px;
+  padding-inline: 50px;
+  color: white;
 }
 
-.about-header{
-    font-size: 48px;
-    font-weight: bold;
+.about-header {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    padding-inline: 20px;
   }
+}

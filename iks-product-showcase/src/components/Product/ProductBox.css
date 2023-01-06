@@ -1,78 +1,21 @@
-.flex{
-    display: flex;
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex p {
+  font-size: 15px;
+  max-lines: 2;
 }
 
-
-.product-box{
-    color: white;
-    background-color: w;
-    padding:1rem;
-    width: 400px;
-    box-shadow: 0px 0px 1px 1px white ;
-    
+.product-box {
+  color: white;
+  max-width: 1200px;
 }
 
-.product-box>img{
-    width: 100%;
+.product-box > img {
+  width: 100%;
 }
 
-.button-container{
-    justify-content: space-evenly;
+.button-container {
+  justify-content: space-evenly;
 }
-
-
-
-.slide {
-    font-size: 20px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 30px 13px;
-    outline: 0;
-    border: 1px solid white;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 2;
-  }
-  
-  .slide i {
-    opacity: 0;
-    font-size: 23px;
-    transition: 0.2s;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    transition: transform 1;
-    
-  }
-  
-  .slide div {
-    transition: transform 0.8s;
-  }
-  
-  .slide:hover div {
-    transform: translateX(-6px);
-  }
-  
-  .slide::after {
-    content: "";
-    background-color: #66f2d5;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: all 0.8s;
-  }
-  
-  .slide:hover i {
-    opacity: 1;
-    transform: translateX(-6px);
-  }
-
-  .slide:hover::after {
-    top: 0px;
-    left: 0px;
-  }
-
