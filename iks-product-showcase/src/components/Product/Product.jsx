@@ -8,17 +8,15 @@ const BoxContent = [];
 
 async function getData() {
   try {
-    const response = await axios.get('http://localhost:3000/products/all');
-    const data = response.data;
-    console.log(data);
-
+    const response = await axios.get('https://iks-backend.onrender.com/products/all');
+    console.log(response.data.data);
+    const data=response.data.data;
+    console.log(data.length);
     for (let i = 0; i < data.length; i++) {
       const name = data[i].name;
-      const shorttext = data[i].description.slice(0,32);
-      const longtext = data[i].description;
+      const description=data[i].description;
       const image = data[i].image;
-
-      BoxContent.push({ name, shorttext,longtext, image });
+      BoxContent.push({ name, description, image });
     }
   } catch (error) {
     console.error(error);

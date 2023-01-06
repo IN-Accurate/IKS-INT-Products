@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 export const api = Axios.create({
-  baseURL: process.env.REACT_APP_API_BASE,
+  baseURL: "https://iks-backend.onrender.com",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

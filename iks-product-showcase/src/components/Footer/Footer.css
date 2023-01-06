@@ -8,15 +8,19 @@
   align-items: center;
   color: white;
 }
+.footer-text-container {
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+  font-size: 16px;
 
+}
 .footer-text {
   text-decoration: none;
   color: white;
-  font-size: 16px;
 }
 
 .footer-container .row {
-  font-size: 14px;
   display: flex;
   gap: 25px;
   flex-direction: row;
@@ -34,6 +38,11 @@
   background-color: black;
   height: 40px;
   padding: 8.5px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 600px) {

@@ -18,15 +18,17 @@ function Footer() {
   };
   return (
     <div className="footer-container" id="footer-container">
-      <h2>Contact Us</h2>
-      <p className="footer-text">Tel: +91 1234567890</p>
+      <h2>CONTACT US</h2>
+      <div className="footer-text-container">
+      <p className="footer-text">Tel: 987654321</p> /
       <a className="footer-text" href="mailto:ieeeks@gmail.com">
         Email: ieeeks@gmail.com
-      </a>
+      </a></div>
       <div className="row">
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
+        <a href="https://facebook.com/IEEEKerala/" target="_blank"  >
+        Facebook</a>
+        <a href="https://twitter.com/IEEEKerala" target="_blank"  rel="noreferrer">Twitter</a>
+        <a href="https://www.instagram.com/ieeekerala/" target="_blank"  rel="noreferrer">Instagram</a>
       </div>
       <div className="input-group">
         <input
