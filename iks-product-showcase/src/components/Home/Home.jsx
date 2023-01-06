@@ -13,19 +13,19 @@ function Home() {
       <div className="leftside">
         <div className="header-text">NEW ARRIVALS</div>
         <div className="home-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus
-          mollis venenatis. Praesent id scelerisque tellus, vitae elementum
-          neque. Morbi pretium nulla eu tortor interdum, vitae egestas eros
-          maximus. Duis eget nisi semper, iaculis justo a, sodales tellus. Morbi
-          pulvinar, velit a porttitor bibendum, justo tortor lacinia ex, a
-          molestie lacus est id velit. Sed blandit luctus sem, sed tristique
-          lectus laoreet vitae. Aenean rhoncus magna id sodales tempus.
+          An online event that encouraged aspiring writers within 
+          the Section to share their experience and achievements as 
+          a valuable member of the organisation, providing them an 
+          opportunity to showcase their skills while inspiring peers 
+          and fellow members to utilise their memberships in the best 
+          possible way. To find out more about the event and its entries 
+          check out our official Instagram handle.
         </div>
         <button className="explore-btn" onClick={scrollToProduct}>
           Explore
         </button>
       </div>
-      <div className="rightside">IMAGE HERE</div>
+      <div className="rightside"><img src="https://interns.ieeekerala.org/assets/img/portfolio/lbw.png" alt="" /></div>
     </div>
   );
 }

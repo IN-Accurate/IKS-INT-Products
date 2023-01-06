@@ -6,6 +6,8 @@
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 25px;
   height: 100vh;
 }
 .header-text {
@@ -18,14 +20,23 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  width: 55%;
+  max-width: 500px;
 }
 
 .rightside {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
+}
+.rightside>img{
+  width: 500px;
+  transition: transform ease-in-out 0.35s;
+}
+
+.rightside>img:hover{
+  transform: scale(1.1);
 }
 
 .home-content {
