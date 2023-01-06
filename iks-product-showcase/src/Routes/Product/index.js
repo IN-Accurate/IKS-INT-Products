@@ -25,7 +25,7 @@ export const ProductPage = () => {
 
   return (
     <>
-      <div className="products-container">
+      <div className="products-container" id="home-container">
         {isLoading && <div className="loader"></div>}
         {product && (
           <>
