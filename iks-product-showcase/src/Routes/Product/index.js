@@ -30,7 +30,10 @@ export const ProductPage = () => {
         {product && (
           <>
             <img
-              src={product.image || "https://via.placeholder.com/400x300"}
+              src={
+                product.image ||
+                "https://interns.ieeekerala.org/assets/img/portfolio/lbw.png"
+              }
               alt="Product IMG"
             />
             <div className="product-details">
