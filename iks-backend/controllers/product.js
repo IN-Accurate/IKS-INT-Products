@@ -12,8 +12,8 @@ exports.getAllProducts = async (req, res) => {
 
 exports.getSpecificProduct = async (req, res) => {
     try {
-        const productName = req.params.productName;
-        const result = await productServices.getSpecificProduct(productName);
+        const productId = req.params.productId;
+        const result = await productServices.getSpecificProduct(productId);
         res.status(200).send({ message: 'product fetched.', data: result });
     } catch (e) {
         res.status(401).send({ message: e.toString() });

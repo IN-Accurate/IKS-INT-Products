@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-// Change origin with frontend URL
+// Change origin with frontend URL for preventing abuse of API
 // app.use(cors({ credentials: true, origin:'https://frontend.url'}));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true}));

@@ -8,9 +8,9 @@ exports.getAllProducts = () => {
         })
     })
 }
-exports.getSpecificProduct = (productName) => {
+exports.getSpecificProduct = (productId) => {
     return new Promise((resolve, reject) => {
-        Products.findOne({name: productName}, (err, product)=>{
+        Products.findOne({_id: productId}, (err, product)=>{
             if(err) return reject(err);
             resolve(product);
         })
