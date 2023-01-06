@@ -21,27 +21,27 @@ function Footer() {
   };
   return (
     <div className="footer-container" id="footer-container">
-      <hr style={{width:'100vw',color:"white"}}/>
+      <hr style={{ width: "100vw", color: "white" }} />
       <h2>CONTACT US</h2>
-      <p style={{ color: "white", fontSize: "16px",marginBottom:"30px"}}>
+      <p style={{ color: "white", fontSize: "16px", marginBottom: "30px" }}>
         We would love to hear from you!
       </p>
-      <div className="row">
-        <div className="icons-row">
-          <FaPhoneAlt className="icon" />
-          <FaMapMarkerAlt className="icon" />
-          <FaEnvelope className="icon" />
+      <div className="contact-container">
+        <div className="contact">
+          <FaPhoneAlt />
+          <p>Call us at</p>
+          <p>+91 1234567890</p>
         </div>
-      </div>
-      <div className="contact-details">
-        <div>Call Us at</div>
-        <div className="location-details-text">940 Piller Ace m2 </div>
-        <div>Email Us at</div>
-      </div>
-      <div className="contact-details-text">
-        <div className="phone-text">9876543201</div>
-        <div className="location-text">Extded IT 690202</div>
-        <div>abc@gmail.com</div>
+        <div className="contact">
+          <FaMapMarkerAlt />
+          <p> IEEE Section Office</p>
+          <p>Kochi, 683503</p>
+        </div>
+        <div className="contact">
+          <FaEnvelope />
+          <p>Email Us at</p>
+          <p>ieeeks@gmail.com</p>
+        </div>
       </div>
       <div className="input-group">
         <input
