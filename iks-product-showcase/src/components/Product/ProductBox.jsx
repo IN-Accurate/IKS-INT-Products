@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 function ProductBox(props) {
   const { text } = props;
   const navigate = useNavigate();
-  console.log(text);
   return (
     <div className="product-box">
       <img

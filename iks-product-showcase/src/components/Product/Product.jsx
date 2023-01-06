@@ -1,6 +1,7 @@
 import ProductBox from "./ProductBox";
 import "./Product.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { api } from "../../api";
 
 function Product() {
@@ -35,7 +36,10 @@ function Product() {
       <h1>FEATURED</h1>
       <div className="product-grid">
         {loading && <div className="loader"></div>}
-        {!loading && products.map((product) => <ProductBox text={product} />)}
+        {!loading &&
+          products.map((product) => (
+            <ProductBox text={product} key={product._id} />
+          ))}
       </div>
     </div>
   );

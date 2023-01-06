@@ -4,6 +4,7 @@ import HamburgerMenu from "react-hamburger-menu";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
+
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
