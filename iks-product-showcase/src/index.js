@@ -4,8 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import { HomePage } from "./Routes/Home";
 import { ProductPage } from "./Routes/Product";
-import { FaArrowUp } from 'react-icons/fa';
-
+import { FaArrowUp } from "react-icons/fa";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -20,21 +19,19 @@ const router = createBrowserRouter([
   },
 ]);
 
-  const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
+const handleClick = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
 
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    
     <button className="scroll-top-button" onClick={handleClick}>
       <FaArrowUp />
     </button>
-  
   </React.StrictMode>
 );
