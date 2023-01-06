@@ -1,5 +1,7 @@
 .flex {
   display: flex;
+  gap: 10px;
+
   flex-direction: column;
 }
 .flex p {
@@ -15,7 +17,8 @@
 .product-box > img {
   width: 100%;
 }
-
-.button-container {
-  justify-content: space-evenly;
+.flex button {
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
 }
