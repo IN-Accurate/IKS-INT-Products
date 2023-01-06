@@ -25,7 +25,12 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   return (
     <nav className="navbar-container">
-      <div className="logo" onClick={scrollToHome}>
+      <div
+        className="logo"
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
         IKS
       </div>
       <div className="navbar-links">
