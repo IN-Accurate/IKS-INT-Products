@@ -26,7 +26,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   return (
     <nav className="navbar-container">
-      <div className="logo">IKS</div>
+      <div className="logo" onClick={scrollToHome} >IKS</div>
       <div className="navbar-links">
         <button onClick={scrollToHome} className="nav-btn">
           Home

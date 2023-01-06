@@ -4,3 +4,19 @@
   font-family: "Poppins";
   box-sizing: border-box;
 }
+
+.scroll-top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.scroll-top-button > svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}

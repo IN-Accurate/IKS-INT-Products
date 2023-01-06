@@ -1,6 +1,6 @@
 .about-container {
   background-color: rgb(24, 40, 51);
-  padding-block: 10px;
+  padding-block: 44px;
   padding-inline: 50px;
   color: white;
 }
@@ -12,6 +12,6 @@
 
 @media (max-width: 900px) {
   .about-container {
-    padding-inline: 20px;
+    padding-inline: 44px;
   }
 }

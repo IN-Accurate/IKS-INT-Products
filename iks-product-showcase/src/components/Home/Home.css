@@ -34,6 +34,7 @@
 
 .explore-btn {
   cursor: pointer;
+  margin-top: 55px;
   border-radius: 10px;
   font-size: 16px;
   width: 150px;
@@ -48,8 +49,13 @@
   -o-border-radius: 10px;
 }
 .explore-btn:hover {
+  border-radius: 50px;
   background-color: white;
   color: black;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 @media (max-width: 900px) {
