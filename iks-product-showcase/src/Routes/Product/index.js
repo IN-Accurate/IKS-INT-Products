@@ -6,15 +6,19 @@ import "./index.css";
 export const ProductPage = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
+      setIsLoading(true);
       const { data } = await api.get(`/product/${productId}`);
       setProduct(data.data);
+      setIsLoading(false);
     })();
 
     return () => {
       setProduct(null);
+      setIsLoading(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -22,6 +26,7 @@ export const ProductPage = () => {
   return (
     <>
       <div className="products-container">
+        {isLoading && <div className="loader"></div>}
         {product && (
           <>
             <img

@@ -34,6 +34,7 @@ function Product() {
     <div className="product-container" id="product-container">
       <h1>FEATURED</h1>
       <div className="product-grid">
+        {loading && <div className="loader"></div>}
         {!loading && products.map((product) => <ProductBox text={product} />)}
       </div>
     </div>
