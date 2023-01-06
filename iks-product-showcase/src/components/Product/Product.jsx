@@ -1,8 +1,6 @@
 import ProductBox from "./ProductBox";
 import "./Product.css";
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../../api";
 
 function Product() {
@@ -29,9 +27,7 @@ function Product() {
       await getData();
     })();
 
-    return () => {
-      // this now gets called when the component unmounts
-    };
+    return () => {};
   }, []);
 
   return (

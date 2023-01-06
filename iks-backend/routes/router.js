@@ -6,7 +6,7 @@ const router = express.Router();
 // pubilc routes
 // should add callback to these routes.
 router.get('/products/all', productController.getAllProducts);
-router.get('/product/:productName', productController.getSpecificProduct);
+router.get('/product/:productId', productController.getSpecificProduct);
 router.get('/search/:productName', productController.search);
 router.post('/subscribe', subscriberController.addSubscriber);
 
