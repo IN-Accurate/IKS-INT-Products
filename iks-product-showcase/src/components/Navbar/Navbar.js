@@ -28,6 +28,9 @@ const Navbar = () => {
     <nav className="navbar-container">
       <div
         className="logo"
+        onClick={() => {
+          window.location.href = "/";
+        }}
       >
         IKS
       </div>

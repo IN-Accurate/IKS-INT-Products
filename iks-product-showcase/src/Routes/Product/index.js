@@ -1,25 +1,45 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { api } from "../../api";
 import "./index.css";
 
 export const ProductPage = () => {
   const { productId } = useParams();
+  const [product, setProduct] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setIsLoading(true);
+      const { data } = await api.get(`/product/${productId}`);
+      setProduct(data.data);
+      setIsLoading(false);
+    })();
+
+    return () => {
+      setProduct(null);
+      setIsLoading(false);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <div className="products-container">
-      <img src="https://picsum.photos/200/300" />
-      <div className="product-details">
-        <h1>Product Name</h1>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or- less normal distribution
-          of letters, as opposed to using 'Content here, content here', making
-          it look like readable English. Many desktop pu blishing packages and
-          web page editors now use Lorem Ipsum as their default model text, and
-          a search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, somet imes by
-          accident, sometimes on purpose (inj humour and the like).
-        </p>
+    <>
+      <div className="products-container">
+        {isLoading && <div className="loader"></div>}
+        {product && (
+          <>
+            <img
+              src={product.image || "https://via.placeholder.com/400x300"}
+              alt="Product IMG"
+            />
+            <div className="product-details">
+              <h1>{product.name}</h1>
+              <p>{product.description}</p>
+            </div>
+          </>
+        )}
       </div>
-    </div>
+    </>
   );
 };

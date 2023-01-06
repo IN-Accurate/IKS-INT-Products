@@ -7,7 +7,10 @@ function ProductBox(props) {
   console.log(text);
   return (
     <div className="product-box">
-      <img src={text.image} alt="Product IMG" />
+      <img
+        src={text.image || "https://via.placeholder.com/400x300"}
+        alt="Product IMG"
+      />
       <h2>{text.name}</h2>
       <div className="card-content">
         <div className="flex">
