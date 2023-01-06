@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Footer.css";
+import qs from "qs";
 import { api } from "../../api";
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
   const [subscribed, setSubscribed] = useState(false);
   const subscribe = async () => {
     try {
-      const response = await api.post("/subscribe", { email });
+      const response = await api.post("/subscribe", qs.stringify({ email }));
       if (response.status === 200) {
         setSubscribed(true);
         console.log(response.data);
