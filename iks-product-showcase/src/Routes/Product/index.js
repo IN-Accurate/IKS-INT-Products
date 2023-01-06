@@ -24,7 +24,10 @@ export const ProductPage = () => {
       <div className="products-container">
         {product && (
           <>
-            <img src="https://picsum.photos/200/300" />
+            <img
+              src={product.image || "https://via.placeholder.com/400x300"}
+              alt="Product IMG"
+            />
             <div className="product-details">
               <h1>{product.name}</h1>
               <p>{product.description}</p>
