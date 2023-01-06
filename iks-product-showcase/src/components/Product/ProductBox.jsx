@@ -1,8 +1,10 @@
-
 import "./ProductBox.css";
+import { useNavigate } from "react-router-dom";
 
 function ProductBox(props) {
   const { text } = props;
+  const navigate = useNavigate();
+  console.log(text);
   return (
     <div className="product-box">
       <img src={text.image} alt="Product IMG" />
@@ -10,7 +12,13 @@ function ProductBox(props) {
       <div className="card-content">
         <div className="flex">
           <p> {text.description} </p>
-          <button>Know More</button>
+          <button
+            onClick={() => {
+              navigate(`/product/${text._id}`);
+            }}
+          >
+            Know More
+          </button>
         </div>
       </div>
     </div>
