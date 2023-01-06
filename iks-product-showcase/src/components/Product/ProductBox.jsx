@@ -7,7 +7,10 @@ function ProductBox(props) {
   return (
     <div className="product-box">
       <img
-        src={text.image || "https://via.placeholder.com/400x300"}
+        src={
+          text.image ||
+          "https://interns.ieeekerala.org/assets/img/portfolio/lbw.png"
+        }
         alt="Product IMG"
       />
       <h2>{text.name}</h2>

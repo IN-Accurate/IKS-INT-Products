@@ -11,21 +11,25 @@ function Home() {
   return (
     <div className="home-container" id="home-container">
       <div className="leftside">
-        <div className="header-text">NEW ARRIVALS</div>
+        <div className="header-text">Learning Beyond Walls</div>
         <div className="home-content">
-          An online event that encouraged aspiring writers within 
-          the Section to share their experience and achievements as 
-          a valuable member of the organisation, providing them an 
-          opportunity to showcase their skills while inspiring peers 
-          and fellow members to utilise their memberships in the best 
-          possible way. To find out more about the event and its entries 
-          check out our official Instagram handle.
+          An online event that encouraged aspiring writers within the Section to
+          share their experience and achievements as a valuable member of the
+          organisation, providing them an opportunity to showcase their skills
+          while inspiring peers and fellow members to utilise their memberships
+          in the best possible way. To find out more about the event and its
+          entries check out our official Instagram handle.
         </div>
         <button className="explore-btn" onClick={scrollToProduct}>
           Explore
         </button>
       </div>
-      <div className="rightside"><img src="https://interns.ieeekerala.org/assets/img/portfolio/lbw.png" alt="" /></div>
+      <div className="rightside">
+        <img
+          src="https://interns.ieeekerala.org/assets/img/portfolio/lbw.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 }
