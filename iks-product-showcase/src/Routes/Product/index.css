@@ -10,6 +10,7 @@
   height: 100vh;
 }
 .products-container img {
+  margin-block-start: 25px;
   width: 50%;
   height: 100%;
 }
