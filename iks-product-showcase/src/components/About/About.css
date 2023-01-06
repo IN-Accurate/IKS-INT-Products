@@ -5,6 +5,9 @@
   color: white;
 }
 
+.about-content {
+  font-size: 16px;
+}
 .about-header {
   font-size: 48px;
   font-weight: bold;
@@ -12,6 +15,6 @@
 
 @media (max-width: 900px) {
   .about-container {
-    padding-inline: 44px;
+    padding-inline: 20px;
   }
 }

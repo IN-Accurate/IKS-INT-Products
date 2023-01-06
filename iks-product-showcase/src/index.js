@@ -30,8 +30,6 @@ const handleClick = () => {
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    <button className="scroll-top-button" onClick={handleClick}>
-      <FaArrowUp />
-    </button>
+    <FaArrowUp onClick={handleClick} className="scroll-top-button" />
   </React.StrictMode>
 );

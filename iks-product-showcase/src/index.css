@@ -7,16 +7,19 @@
 
 .scroll-top-button {
   position: fixed;
+  color: white;
   right: 20px;
   bottom: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
+  background: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease;
+  padding: 10px;
   cursor: pointer;
 }
 
-.scroll-top-button > svg {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
+.scroll-top-button:hover {
+  background-color: white;
+  color: black;
 }

@@ -1,5 +1,21 @@
+import { useState } from "react";
 import "./Footer.css";
+import { api } from "../../api";
+
 function Footer() {
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+  const subscribe = async () => {
+    try {
+      const response = await api.post("/subscribe", { email });
+      if (response.status === 200) {
+        setSubscribed(true);
+        console.log(response.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="footer-container" id="footer-container">
       <h2>Contact Us</h2>
@@ -17,9 +33,13 @@ function Footer() {
           type="text"
           className="form-control"
           placeholder="Enter your email here"
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <span className="input-addon">Subscribe</span>
+        <span className="input-addon" onClick={subscribe}>
+          Subscribe
+        </span>
       </div>
+      {subscribed && <p>Subscribed Successfully</p>}
     </div>
   );
 }
