@@ -1,9 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import HamburgerMenu from "react-hamburger-menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FaSearch } from "react-icons/fa";
 
 import { animateScroll as scroll } from "react-scroll";
 
@@ -26,7 +25,9 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   return (
     <nav className="navbar-container">
-      <div className="logo" onClick={scrollToHome} >IKS</div>
+      <div className="logo" onClick={scrollToHome}>
+        IKS
+      </div>
       <div className="navbar-links">
         <button onClick={scrollToHome} className="nav-btn">
           Home
@@ -46,7 +47,7 @@ const Navbar = () => {
               className="search-icon"
               onClick={() => setIsSearchOpen(!isSearchOpen)}
             >
-              <FontAwesomeIcon icon={faSearch} />
+              <FaSearch height="50px" width="50px" />
             </div>
           </form>
         ) : (
@@ -54,7 +55,7 @@ const Navbar = () => {
             className="search-icon"
             onClick={() => setIsSearchOpen(!isSearchOpen)}
           >
-            <FontAwesomeIcon icon={faSearch} />
+            <FaSearch height="50px" width="50px" />
           </div>
         )}
       </div>
@@ -92,7 +93,7 @@ const Navbar = () => {
                   className="search-icon"
                   onClick={() => setIsSearchOpen(!isSearchOpen)}
                 >
-                  <FontAwesomeIcon icon={faSearch} />
+                  <FaSearch height="50px" width="50px" />
                 </div>
               </form>
             ) : (
@@ -100,7 +101,7 @@ const Navbar = () => {
                 className="search-icon"
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
               >
-                <FontAwesomeIcon icon={faSearch} />
+                <FaSearch height="50px" width="50px" />
               </div>
             )}
           </div>
