@@ -7,7 +7,7 @@ function ProductBox(props) {
   return (
     <div className="product-box">
       <img
-        src="https://steeinstad.nl/wp-content/uploads/2017/08/d2-placeholder-1080px.png"
+        src={text.image}
         alt="Product IMG"
       />
       <h2>{text.title}</h2>
