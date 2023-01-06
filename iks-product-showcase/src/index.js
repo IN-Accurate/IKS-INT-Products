@@ -35,7 +35,6 @@ root.render(
     <Navbar />
     <RouterProvider router={router} />
     <Footer />
-
     <FaArrowUp onClick={handleClick} className="scroll-top-button" />
   </React.StrictMode>
 );
