@@ -1,37 +1,44 @@
 import ProductBox from "./ProductBox";
 import "./Product.css";
-import axios from 'axios';
-
+import axios from "axios";
+import { useEffect } from "react";
+import { useState } from "react";
+import { api } from "../../api";
 
 function Product() {
-const BoxContent = [];
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-async function getData() {
-  try {
-    const response = await axios.get('https://iks-backend.onrender.com/products/all');
-    
-    const data=response.data.data;
-    for (let i = 0; i < data.length; i++) {
-      const name = data[i].name;
-      const description=data[i].description;
-      const image = data[i].image;
-      BoxContent.push({ name, description, image });
+  async function getData() {
+    try {
+      setLoading(true);
+      const response = await api.get(
+        "https://iks-backend.onrender.com/products/all"
+      );
+      const { data } = response.data;
+      setProducts(data);
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      console.error(error);
     }
-  } catch (error) {
-    console.error(error);
   }
-}
 
-getData();
+  useEffect(() => {
+    (async () => {
+      await getData();
+    })();
 
+    return () => {
+      // this now gets called when the component unmounts
+    };
+  }, []);
 
   return (
     <div className="product-container" id="product-container">
       <h1>FEATURED</h1>
       <div className="product-grid">
-        {BoxContent.map((dict, key) => (
-          <ProductBox text={dict} key={key} />
-        ))}
+        {!loading && products.map((product) => <ProductBox text={product} />)}
       </div>
     </div>
   );
