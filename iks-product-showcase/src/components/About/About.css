@@ -1,10 +1,27 @@
 .about-container {
-  background-color: rgb(24, 40, 51);
+  background-color: rgb(0,40,85);
   padding-block: 44px;
   padding-inline: 50px;
+  padding-right: 30%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
+.about-content {
+  font-size: 16px;
+  padding: 2%;
+  height: fit-content;
+  width: 55vh;
+  background-color: white;
+  color:black;
+}
+
+.about-content:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
 .about-header {
   font-size: 48px;
   font-weight: bold;
@@ -12,6 +29,6 @@
 
 @media (max-width: 900px) {
   .about-container {
-    padding-inline: 44px;
+    padding-inline: 20px;
   }
 }

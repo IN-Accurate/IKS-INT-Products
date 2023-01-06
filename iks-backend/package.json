@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "build":"netlify-lambda build express"
+=======
+    "start": "nodemon index.js"
+>>>>>>> 96d74a2fdb64a8ca261c84fa33c0286b4a2e39d4
   },
   "author": "Adithya Udayan",
   "license": "ISC",
