@@ -9,9 +9,8 @@ const BoxContent = [];
 async function getData() {
   try {
     const response = await axios.get('https://iks-backend.onrender.com/products/all');
-    console.log(response.data.data);
+    
     const data=response.data.data;
-    console.log(data.length);
     for (let i = 0; i < data.length; i++) {
       const name = data[i].name;
       const description=data[i].description;
