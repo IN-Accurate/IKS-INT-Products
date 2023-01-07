@@ -104,7 +104,7 @@
     display: flex;
     row-gap: 8px;
     flex-direction: column;
-    background-color: #333;
+    background-color: #000000;
     position: absolute;
     top: 60px;
     left: 0;
