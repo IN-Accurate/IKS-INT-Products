@@ -30,7 +30,9 @@ function Footer() {
         <div className="contact">
           <FaPhoneAlt />
           <p>Call us at</p>
-          <p>+91 1234567890</p>
+          <a href="tel:+91 1234567890">
+            <p>+91 1234567890</p>
+          </a>
         </div>
         <div className="contact">
           <FaMapMarkerAlt />
@@ -40,7 +42,9 @@ function Footer() {
         <div className="contact">
           <FaEnvelope />
           <p>Email Us at</p>
-          <p>ieeeks@gmail.com</p>
+          <a href="mailto:ieeeks@gmail.com">
+            <p>ieeeks@gmail.com</p>
+          </a>
         </div>
       </div>
       <div className="input-group">

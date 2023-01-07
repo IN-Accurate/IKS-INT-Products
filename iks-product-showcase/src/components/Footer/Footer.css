@@ -57,6 +57,10 @@
   justify-content: center;
 }
 
+.contact-container .contact a {
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 600px) {
   .form-control {
     width: 250px;
